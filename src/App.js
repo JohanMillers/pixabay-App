@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import Formulario from './Componentes/Formulario';
 import ListadoImagenes from './Componentes/ListadoImagenes';
-import './App.css';
+
 
 
 function App() {

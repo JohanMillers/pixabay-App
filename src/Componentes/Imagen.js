@@ -1,15 +1,13 @@
 import React from 'react';
+import './Imagen.css';
 
 const Imagen = ({imagen}) => {
 
     // extraer imagen
-    const { largeImagenURL, likes, previewURL, tags, views  } = imagen;
+    const { largeImageURL, likes, previewURL, tags, views  } = imagen;
     return (
-        <div className = "col-12 col-sm-6 col-md-4 col-lg-3">
-            <div className = "card">
-                <img src={previewURL} alt={tags} className= "card-img-top" />
-            </div>
-
+        <div className = "grid-gallery__item">
+                <img src={largeImageURL} alt={tags} className= "grid-gallery__image" />
         </div>
       );
 }

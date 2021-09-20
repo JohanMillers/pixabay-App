@@ -1,18 +1,22 @@
 import React from 'react';
 import Imagen from './Imagen';
+import './ListadoImagenes.css';
+
+
+
+
 const ListadoImagenes = ({imagenes}) => {
     return ( 
-        <div className = " col-12 p-5 row">
-            {imagenes.map(imagen => (
+        <div className = "grid-gallery">
+           {imagenes.map(imagen => (
 
-                <Imagen
-                   key={imagen.id} 
-                   imagen={imagen}
-                   />
-                
-            ))}
+                 <Imagen
+                     key={imagen.id} 
+                    imagen={imagen}
+                  />
 
-        </div>
+                  ))}
+           </div>
      );
 }
  
