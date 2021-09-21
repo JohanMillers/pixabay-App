@@ -3,12 +3,16 @@ import './Imagen.css';
 
 const Imagen = ({imagen}) => {
 
-    // extraer imagen
-    const { largeImageURL, likes, previewURL, tags, views  } = imagen;
+    // Extraer datos de la imagenes
+    const { largeImageURL, likes,  tags, views  } = imagen;
     return (
-        <div className = "grid-gallery__item">
-                <img src={largeImageURL} alt={tags} className= "grid-gallery__image" />
-        </div>
+       
+        <a href={largeImageURL} target = "_blank" without rel="noreferrer"  className = "grid-gallery__item">
+            <img src={largeImageURL} alt={tags} className= "grid-gallery__image" />
+        </a>
+        
+        
+        
       );
 }
  
