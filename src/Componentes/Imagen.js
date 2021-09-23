@@ -4,9 +4,17 @@ import './Imagen.css';
 const Imagen = ({imagen}) => {
 
     // Extraer datos de la imagenes
+<<<<<<< HEAD
     const { largeImageURL, tags  } = imagen;
 
  
+=======
+<<<<<<< HEAD
+    const { largeImageURL, tags  } = imagen;
+=======
+    const { largeImageURL, likes,  tags, views  } = imagen;
+>>>>>>> master
+>>>>>>> master
     return (
        
         <a href={largeImageURL} target = "_blank" without rel="noreferrer"  className = "grid-gallery__item">
